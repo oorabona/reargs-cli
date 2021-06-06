@@ -1,6 +1,6 @@
 {
   "name": "reargs-cli",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "A CLI tool to help create and validate argument parsing with Reargs",
   "bin": {
     "reargs": "./bin/reargs"
