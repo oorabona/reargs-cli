@@ -1,0 +1,68 @@
+{
+  "name": "reargs-cli",
+  "version": "0.9.0",
+  "description": "A CLI tool to help create and validate argument parsing with Reargs",
+  "bin": {
+    "reargs": "./index.js"
+  },
+  "main": "index.js",
+  "module": "lib/cli.mjs",
+  "exports": {
+    ".": "./index.js"
+  },
+  "scripts": {
+    "coverage": "npx c8 mocha",
+    "node-cov": "./node_modules/.bin/coverage-node ./node_modules/.bin/mocha",
+    "test": "npx mocha",
+    "lint": "./node_modules/.bin/eslint .",
+    "lint:fix": "./node_modules/.bin/eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oorabona/reargs.git"
+  },
+  "keywords": [
+    "arg",
+    "cli",
+    "argument",
+    "command",
+    "line",
+    "parser",
+    "regex",
+    "regexp"
+  ],
+  "author": "Olivier ORABONA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oorabona/reargs-cli/issues"
+  },
+  "homepage": "https://github.com/oorabona/reargs-cli#readme",
+  "standard": {
+    "parser": "@babel/eslint-parser",
+    "requireConfigFile": "false",
+    "env": [
+      "mocha"
+    ]
+  },
+  "dependencies": {
+    "pkginfo": "^0.4.1",
+    "reargs": "^1.1.0",
+    "rw": "^1.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/eslint-parser": "latest",
+    "@babel/plugin-proposal-class-properties": "latest",
+    "@babel/preset-env": "latest",
+    "codecov": "^3.8.1",
+    "coverage-node": "^5.0.1",
+    "coveralls": "^3.1.0",
+    "eslint": "latest",
+    "eslint-config-standard": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-node": "latest",
+    "esm": "^3.2.25",
+    "mocha": "^8.3.0",
+    "mocha-lcov-reporter": "^1.3.0"
+  }
+}
