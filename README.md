@@ -429,7 +429,7 @@ $ grep --help | reargs -r -o json
 
 But that is not all !
 
-### Replacing parameter attribute with a customized RegExp
+### Replacing parameter attribute with a customized RegExp
 
 As you can see, there are several parameters having custom attributes, like `--context` or `--color`. So at some point we might want to specify the `RegExp` you want to map with these attributes.
 
